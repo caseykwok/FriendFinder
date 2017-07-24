@@ -24,6 +24,8 @@ router.post("/friends", function(req, res) {
 		// console.log("Friend: " + friend.name);
 		// console.log("Difference: " + difference);
 	})
+	friends.push(req.body);
+	// console.log("Updated Friends: ", friends);
 	res.send(closestMatch);
 });
 
