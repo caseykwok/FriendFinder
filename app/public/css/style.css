@@ -1,7 +1,11 @@
-.panel-default>.panel-heading, .modal-header, .icons {
+.panel-default>.panel-heading, .modal-header {
 	background-color: #337ab7;
 	border-color: #2e6da4;
 	color: #ffffff;
+}
+
+#name-label, #photo-label {
+	font-size: 16px;
 }
 
 #name-input-error, 
@@ -23,6 +27,19 @@
 	margin-top: 5px;
 }
 
+#question-1-error,
+#question-2-error,
+#question-3-error,
+#question-4-error,
+#question-5-error,
+#question-6-error,
+#question-7-error,
+#question-8-error,
+#question-9-error,
+#question-10-error {
+	padding-left: 10px;
+}
+
 #survey {
 	padding: 20px;
 }
@@ -38,7 +55,21 @@
 	width: 100%;
 }
 
+.dropdown-questions-header {
+	background-color: #eee;
+	font-size: 20px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+	padding-top: 10px;
+}
+
+.dropdown-questions-label {
+	font-size: 16px;
+	margin-left: 10px;
+}
+
 .dropdown-questions {
+	margin-left: 10px;
 	width: 200px;
 }
 

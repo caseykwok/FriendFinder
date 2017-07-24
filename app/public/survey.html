@@ -16,7 +16,7 @@
 			<div class="panel-body">
 				<form>
 					<div class="form-group">
-						<label for="name">Name (Required)</label>
+						<label id="name-label" for="name">Name (Required)</label>
 						<div class="input-group">
 							<span class="input-group-addon icons" id="user-icon"><i class="fa fa-user" aria-hidden="true"></i></span>
 							<input type="text" class="form-control" id="name">
@@ -24,7 +24,7 @@
 						<span id="name-input-error">* Please input your name.</span>
 					</div>
 					<div class="form-group">
-						<label for="photo">Link to Photo Image (Required)</label>
+						<label id="photo-label" for="photo">Link to Photo Image (Required)</label>
 						<div class="input-group">
 							<span class="input-group-addon icons" id="photo-icon"><i class="fa fa-picture-o" aria-hidden="true"></i></span>
 							<input type="url" class="form-control" id="photo">
@@ -33,8 +33,8 @@
 						<span id="invalid-photo-url">* Please provide a valid URL.</span>
 					</div>
 					<div>
-						<h3>Question 1</h3>
-						<label for="question-1">Your mind is always buzzing with unexplored ideas and plans.</label>
+						<h3 class="dropdown-questions-header">Question 1</h3>
+						<label class="dropdown-questions-label" for="question-1">Your mind is always buzzing with unexplored ideas and plans.</label>
 						<select class="form-control dropdown-questions" id="question-1">
 							<option disabled selected>-- Please Select --</option>
 							<option value="1">1 (Strongly Disagree)</option>
@@ -46,8 +46,8 @@
 						<span id="question-1-error">* Please select one of the options.</span>
 					</div>
 					<div>
-						<h3>Question 2</h3>
-						<label for="question-2">Generally speaking, you rely more on your experience than your imagination.</label>
+						<h3 class="dropdown-questions-header">Question 2</h3>
+						<label class="dropdown-questions-label" for="question-2">Generally speaking, you rely more on your experience than your imagination.</label>
 						<select class="form-control dropdown-questions" id="question-2">
 							<option disabled selected>-- Please Select --</option>
 							<option value="1">1 (Strongly Disagree)</option>
@@ -59,8 +59,8 @@
 						<span id="question-2-error">* Please select one of the options.</span>
 					</div>
 					<div>
-						<h3>Question 3</h3>
-						<label for="question-3">You find it easy to stay relaxed and focused even when there is some pressure.</label>
+						<h3 class="dropdown-questions-header">Question 3</h3>
+						<label class="dropdown-questions-label" for="question-3">You find it easy to stay relaxed and focused even when there is some pressure.</label>
 						<select class="form-control dropdown-questions" id="question-3">
 							<option disabled selected>-- Please Select --</option>
 							<option value="1">1 (Strongly Disagree)</option>
@@ -72,8 +72,8 @@
 						<span id="question-3-error">* Please select one of the options.</span>
 					</div>
 					<div>
-						<h3>Question 4</h3>
-						<label for="question-4">You rarely do something just out of sheer curiosity.</label>
+						<h3 class="dropdown-questions-header">Question 4</h3>
+						<label class="dropdown-questions-label" for="question-4">You rarely do something just out of sheer curiosity.</label>
 						<select class="form-control dropdown-questions" id="question-4">
 							<option disabled selected>-- Please Select --</option>
 							<option value="1">1 (Strongly Disagree)</option>
@@ -85,8 +85,8 @@
 						<span id="question-4-error">* Please select one of the options.</span>
 					</div>
 					<div>
-						<h3>Question 5</h3>
-						<label for="question-5">People can rarely upset you.</label>
+						<h3 class="dropdown-questions-header">Question 5</h3>
+						<label class="dropdown-questions-label" for="question-5">People can rarely upset you.</label>
 						<select class="form-control dropdown-questions" id="question-5">
 							<option disabled selected>-- Please Select --</option>
 							<option value="1">1 (Strongly Disagree)</option>
@@ -98,8 +98,8 @@
 						<span id="question-5-error">* Please select one of the options.</span>
 					</div>
 					<div>
-						<h3>Question 6</h3>
-						<label for="question-6">It is often difficult for you to relate to other people’s feelings.</label>
+						<h3 class="dropdown-questions-header">Question 6</h3>
+						<label class="dropdown-questions-label" for="question-6">It is often difficult for you to relate to other people’s feelings.</label>
 						<select class="form-control dropdown-questions" id="question-6">
 							<option disabled selected>-- Please Select --</option>
 							<option value="1">1 (Strongly Disagree)</option>
@@ -111,8 +111,8 @@
 						<span id="question-6-error">* Please select one of the options.</span>
 					</div>
 					<div>
-						<h3>Question 7</h3>
-						<label for="question-7">In a discussion, truth should be more important than people’s sensitivities.</label>
+						<h3 class="dropdown-questions-header">Question 7</h3>
+						<label class="dropdown-questions-label" for="question-7">In a discussion, truth should be more important than people’s sensitivities.</label>
 						<select class="form-control dropdown-questions" id="question-7">
 							<option disabled selected>-- Please Select --</option>
 							<option value="1">1 (Strongly Disagree)</option>
@@ -124,8 +124,8 @@
 						<span id="question-7-error">* Please select one of the options.</span>
 					</div>
 					<div>
-						<h3>Question 8</h3>
-						<label for="question-8">You rarely get carried away by fantasies and ideas.</label>
+						<h3 class="dropdown-questions-header">Question 8</h3>
+						<label class="dropdown-questions-label" for="question-8">You rarely get carried away by fantasies and ideas.</label>
 						<select class="form-control dropdown-questions" id="question-8">
 							<option disabled selected>-- Please Select --</option>
 							<option value="1">1 (Strongly Disagree)</option>
@@ -137,8 +137,8 @@
 						<span id="question-8-error">* Please select one of the options.</span>
 					</div>
 					<div>
-						<h3>Question 9</h3>
-						<label for="question-9">You think that everyone’s views should be respected regardless of whether they are supported by facts or not.</label>
+						<h3 class="dropdown-questions-header">Question 9</h3>
+						<label class="dropdown-questions-label" for="question-9">You think that everyone’s views should be respected regardless of whether they are supported by facts or not.</label>
 						<select class="form-control dropdown-questions" id="question-9">
 							<option disabled selected>-- Please Select --</option>
 							<option value="1">1 (Strongly Disagree)</option>
@@ -150,8 +150,8 @@
 						<span id="question-9-error">* Please select one of the options.</span>
 					</div>		
 					<div>
-						<h3>Question 10</h3>
-						<label for="question-10">You feel more energetic after spending time with a group of people.</label>
+						<h3 class="dropdown-questions-header">Question 10</h3>
+						<label class="dropdown-questions-label" for="question-10">You feel more energetic after spending time with a group of people.</label>
 						<select class="form-control dropdown-questions" id="question-10">
 							<option disabled selected>-- Please Select --</option>
 							<option value="1">1 (Strongly Disagree)</option>
