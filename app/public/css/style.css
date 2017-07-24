@@ -1,0 +1,52 @@
+/*.panel-default {
+	border-color: #2e6da4;
+}*/
+
+.panel-default>.panel-heading, .modal-header, .icons {
+	background-color: #337ab7;
+	border-color: #2e6da4;
+	color: #ffffff;
+}
+
+#name-input-error, 
+#photo-input-error,
+#invalid-photo-url,
+#question-1-error,
+#question-2-error,
+#question-3-error,
+#question-4-error,
+#question-5-error,
+#question-6-error,
+#question-7-error,
+#question-8-error,
+#question-9-error,
+#question-10-error {
+	color: #FF0000;
+	display: none;
+	font-size: 12px;
+	margin-top: 5px;
+}
+
+#survey {
+	padding: 20px;
+}
+
+#survey-heading {
+	font-size: 20px;
+	font-weight: bold;
+}
+
+#submit {
+	font-size: 18px;
+	padding: 10px;
+	width: 100%;
+}
+
+.dropdown-questions {
+	width: 200px;
+}
+
+#closest-match-name {
+	margin-bottom: 20px;
+	margin-top: 0px;
+}

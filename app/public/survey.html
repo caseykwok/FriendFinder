@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Friend Finder Survey</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="static/css/style.css">
+</head>
+<body>
+
+	<div class="container">
+		<h2>Survey Questions</h2>
+		<hr>
+		<div class="panel panel-default">
+			<div class="panel-heading" id="survey-heading">About You</div>
+			<div class="panel-body">
+				<form>
+					<div class="form-group">
+						<label for="name">Name (Required)</label>
+						<div class="input-group">
+							<span class="input-group-addon icons"><i class="fa fa-user" aria-hidden="true"></i></span>
+							<input type="text" class="form-control" id="name">
+						</div>
+						<span id="name-input-error">* Please input your name.</span>
+					</div>
+					<div class="form-group">
+						<label for="photo">Link to Photo Image (Required)</label>
+						<div class="input-group">
+							<span class="input-group-addon icons"><i class="fa fa-picture-o" aria-hidden="true"></i></span>
+							<input type="url" class="form-control" id="photo">
+						</div>
+						<span id="photo-input-error">* Please provide a URL to your photo.</span>
+						<span id="invalid-photo-url">* Please provide a valid URL.</span>
+					</div>
+					<div>
+						<h3>Question 1</h3>
+						<label for="question-1">Your mind is always buzzing with unexplored ideas and plans.</label>
+						<select class="form-control dropdown-questions" id="question-1">
+							<option disabled selected>-- Please Select --</option>
+							<option value="1">1 (Strongly Disagree)</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5 (Strongly Agree)</option>
+						</select>
+						<span id="question-1-error">* Please select one of the options.</span>
+					</div>
+					<div>
+						<h3>Question 2</h3>
+						<label for="question-2">Generally speaking, you rely more on your experience than your imagination.</label>
+						<select class="form-control dropdown-questions" id="question-2">
+							<option disabled selected>-- Please Select --</option>
+							<option value="1">1 (Strongly Disagree)</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5 (Strongly Agree)</option>
+						</select>
+						<span id="question-2-error">* Please select one of the options.</span>
+					</div>
+					<div>
+						<h3>Question 3</h3>
+						<label for="question-3">You find it easy to stay relaxed and focused even when there is some pressure.</label>
+						<select class="form-control dropdown-questions" id="question-3">
+							<option disabled selected>-- Please Select --</option>
+							<option value="1">1 (Strongly Disagree)</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5 (Strongly Agree)</option>
+						</select>
+						<span id="question-3-error">* Please select one of the options.</span>
+					</div>
+					<div>
+						<h3>Question 4</h3>
+						<label for="question-4">You rarely do something just out of sheer curiosity.</label>
+						<select class="form-control dropdown-questions" id="question-4">
+							<option disabled selected>-- Please Select --</option>
+							<option value="1">1 (Strongly Disagree)</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5 (Strongly Agree)</option>
+						</select>
+						<span id="question-4-error">* Please select one of the options.</span>
+					</div>
+					<div>
+						<h3>Question 5</h3>
+						<label for="question-5">People can rarely upset you.</label>
+						<select class="form-control dropdown-questions" id="question-5">
+							<option disabled selected>-- Please Select --</option>
+							<option value="1">1 (Strongly Disagree)</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5 (Strongly Agree)</option>
+						</select>
+						<span id="question-5-error">* Please select one of the options.</span>
+					</div>
+					<div>
+						<h3>Question 6</h3>
+						<label for="question-6">It is often difficult for you to relate to other people’s feelings.</label>
+						<select class="form-control dropdown-questions" id="question-6">
+							<option disabled selected>-- Please Select --</option>
+							<option value="1">1 (Strongly Disagree)</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5 (Strongly Agree)</option>
+						</select>
+						<span id="question-6-error">* Please select one of the options.</span>
+					</div>
+					<div>
+						<h3>Question 7</h3>
+						<label for="question-7">In a discussion, truth should be more important than people’s sensitivities.</label>
+						<select class="form-control dropdown-questions" id="question-7">
+							<option disabled selected>-- Please Select --</option>
+							<option value="1">1 (Strongly Disagree)</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5 (Strongly Agree)</option>
+						</select>
+						<span id="question-7-error">* Please select one of the options.</span>
+					</div>
+					<div>
+						<h3>Question 8</h3>
+						<label for="question-8">You rarely get carried away by fantasies and ideas.</label>
+						<select class="form-control dropdown-questions" id="question-8">
+							<option disabled selected>-- Please Select --</option>
+							<option value="1">1 (Strongly Disagree)</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5 (Strongly Agree)</option>
+						</select>
+						<span id="question-8-error">* Please select one of the options.</span>
+					</div>
+					<div>
+						<h3>Question 9</h3>
+						<label for="question-9">You think that everyone’s views should be respected regardless of whether they are supported by facts or not.</label>
+						<select class="form-control dropdown-questions" id="question-9">
+							<option disabled selected>-- Please Select --</option>
+							<option value="1">1 (Strongly Disagree)</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5 (Strongly Agree)</option>
+						</select>
+						<span id="question-9-error">* Please select one of the options.</span>
+					</div>		
+					<div>
+						<h3>Question 10</h3>
+						<label for="question-10">You feel more energetic after spending time with a group of people.</label>
+						<select class="form-control dropdown-questions" id="question-10">
+							<option disabled selected>-- Please Select --</option>
+							<option value="1">1 (Strongly Disagree)</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5 (Strongly Agree)</option>
+						</select>
+						<span id="question-10-error">* Please select one of the options.</span>
+					</div>				
+					<br>	
+					<button type="submit" class="btn btn-primary" id="submit" data-target="#closest-match"><i class="fa fa-check-circle" aria-hidden="true"></i> Submit</button>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<p><a href="/api/friends">API Friends List</a> | <a href="https://github.com/caseykwok/" target='_blank'">GitHub Repo</a></p>
+	</div>
+
+	<div class="container">
+		<div id="closest-match" class="modal fade" role="dialog">
+			<div class="modal-dialog modal-md">
+
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+						<h2 class="modal-title">Best Match</h2>
+					</div>
+					<div class="modal-body">
+						<h2 id="closest-match-name"></h2>
+						<img alt="Closest Match Photo" id="closest-match-photo">
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="https://use.fontawesome.com/75d0eb9449.js"></script>
+	<script>
+		$("#submit").on("click", function(event) {
+			event.preventDefault();
+
+			// Hide all error messages by default in case user resubmits with an answer
+			$("#name-input-error").hide();
+			$("#photo-input-error").hide();
+			$("#invalid-photo-url").hide();
+			for (let i = 1; i < 11; i++) {
+				$("#question-" + i + "-error").hide();
+			}
+
+			function imageExists(url, callback) {
+				var img = new Image();
+				img.onload = function() {
+					callback(true);
+				};
+				img.onerror = function() {
+					callback(false); 
+				};
+				img.src = url;
+			};
+
+			function validateForm() {
+				let valid = true;
+				// If user did not provide a name
+				if (!$("#name").val()) {
+					$("#name-input-error").show();
+					valid = false;
+				}
+				// If user did not provide a response to one of the 10 questions
+				for (let i = 1; i < 11; i++) {
+					if (!$("#question-" + i).val()) {
+						$("#question-" + i + "-error").show();
+						valid = false;
+					}
+				}
+				// If user did not provide a photo URL
+				if (!$("#photo").val()) {
+					$("#photo-input-error").show();
+					valid = false;
+				} else {
+					// Check to see if provided photo URL exists
+					imageExists($("#photo").val(), function(exists) {
+						if (!exists) {
+							$("#invalid-photo-url").show();
+							valid = false;
+						}
+						console.log("Form Valid? " + valid);
+						// If the form is valid, then continue with finding the closest match
+						// Function findMatch() must be put as a callback function in imageExists() since imageExists() runs asynchronously and it will say the form is valid before imageExists() is completed
+						if (valid) {
+							findMatch();
+						}
+					});
+				}
+			};
+
+			function findMatch() {
+				var newFriend = {
+					"name": $("#name").val().trim(),
+					"photo": $("#photo").val().trim(),
+					"scores": [
+						$("#question-1").val(),
+						$("#question-2").val(),
+						$("#question-3").val(),
+						$("#question-4").val(),
+						$("#question-5").val(),
+						$("#question-6").val(),
+						$("#question-7").val(),
+						$("#question-8").val(),
+						$("#question-9").val(),
+						$("#question-10").val()
+					]
+				}
+				console.log(newFriend);
+
+				// Clear form inputs
+				$("#name").val("");
+				$("#photo").val("");
+				for (let i = 1; i < 11; i++) {
+					$("#question-" + i).val("-- Please Select --");
+				}
+
+				$.post("/api/friends", newFriend)
+				.done(function(data) {
+					// console.log("Closest Match: ", data);
+					$("#closest-match-name").text(data.name);
+					$("#closest-match-photo").attr("src", data.photo);
+
+					// Display the modal
+					$("#closest-match").modal("toggle");
+				});
+			};
+
+			validateForm();
+		});
+	</script>
+</body>
+</html>
