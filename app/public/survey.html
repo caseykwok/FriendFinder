@@ -237,6 +237,7 @@
 
 			function validateForm() {
 				let valid = true;
+				let alerted = false;
 				// If user did not provide a name
 				if (!$("#name").val()) {
 					$("span#user-icon.input-group-addon.icons").css("background-color", "#f2dede");
@@ -290,8 +291,14 @@
 						// Function findMatch() must be put as a callback function in imageExists() since imageExists() runs asynchronously and it will say the form is valid before imageExists() is completed
 						if (valid) {
 							findMatch();
+						} else if (!valid && !alerted) {
+							alert("Please fill out all fields.");
 						}
 					});
+				}
+				if (!valid && !alerted) {
+					alerted = true;
+					alert("Please fill out all fields.");
 				}
 			};
 

@@ -17,6 +17,8 @@ router.post("/friends", function(req, res) {
 		for (let i = 0; i < friendScores.length; i++) {
 			difference += Math.abs(friendScores[i] - userScores[i]);
 		}
+		// console.log("Name: " + friend.name);
+		// console.log("Difference: " + difference);
 		if (!minDifference || minDifference > difference) {
 			minDifference = difference;
 			closestMatch = friend;
@@ -27,6 +29,7 @@ router.post("/friends", function(req, res) {
 	friends.push(req.body);
 	// console.log("Updated Friends: ", friends);
 	res.send(closestMatch);
+	// console.log("Closest Match: " + closestMatch.name);
 });
 
 module.exports = router
