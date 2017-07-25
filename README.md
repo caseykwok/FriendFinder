@@ -76,4 +76,4 @@ There are two ways to run this application. The user can either run the applicat
 	- If **yes**, the application will show the user the name and the picture of their best match.
 	- If **no**, the application will alert the user to fill out all fields and provide a valid photo URL.
 
-![FriendFinder](public/images/friendFinder.gif)
+![FriendFinder](app/public/images/friendFinder.gif)
